@@ -1,8 +1,24 @@
+import { Routes, Route, Link } from "react-router-dom";
+import Form from "./Form.jsx";
+import AddUser from "./AddUser.jsx";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
+    <div>
+      <nav>
+        <Link to="/">Home</Link> |{" "}
+        <Link to="/form">Form</Link> | {" "}
+        <Link to="/adduser">Add User</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" />
+        <Route path="/form" element={<Form />} />
+        <Route path="/adduser" element={<AddUser />} />
+      </Routes>
     </div>
+
+   
   );
 }
 

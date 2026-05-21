@@ -52,6 +52,7 @@
 
 body {
   margin: 0;
+  background-color: black;
 }
 
 #root {
@@ -108,4 +109,34 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+
+.input-container{
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+height: 100vh;
+}
+
+.input-container input{
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.submit-btn{
+  padding: 8px 16px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
