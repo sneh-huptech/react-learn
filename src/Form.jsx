@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 
 
     return (
-      
+     
       <div>
       <h1>Products Table</h1>
 
