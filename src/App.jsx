@@ -11,11 +11,11 @@ function App() {
         <Link to="/adduser">Add User</Link>
       </nav>
 
-      <Routes>
-        <Route path="/" />
-        <Route path="/form" element={<Form />} />
-        <Route path="/adduser" element={<AddUser />} />
-      </Routes>
+     <Routes>
+  <Route path="/" element={<h1>Home</h1>} />
+  <Route path="/form" element={<Form />} />
+  <Route path="/adduser" element={<AddUser />} />
+</Routes>
     </div>
 
    

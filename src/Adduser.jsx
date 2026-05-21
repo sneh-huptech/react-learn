@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddUser = () => {
+function AddUser() {
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
   const [users, setUsers] = useState([]);
@@ -36,6 +36,6 @@ const AddUser = () => {
       <button>Add</button>
     </form>
   );
-};
+}
 
 export default AddUser;
